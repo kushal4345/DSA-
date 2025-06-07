@@ -5,7 +5,8 @@ public class ArraySum {
         if(i == arr.length){
             return 0;
         }
-        return arr[i] + sumOfArray(arr ,i+1);
+        int sum = sumOfArray(arr ,i+1);
+         return arr[i] + sum;
     }
     public static void main (String args[]){
         int arr[] = {4, 6 , 9 , 8};
