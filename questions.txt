@@ -1,0 +1,113 @@
+1. Implementation + Basics
+2. Reverse (Recursion + K-group)
+3. Two Pointers (Cycle, Mid, Palindrome)
+4. Recursion-only Problems
+5. Merge & Sort (Recursive & PriorityQueue)
+6. Modify/Rotate/Group/Even-Odd
+7. Random/Multilevel Pointers
+8. Add Two Numbers (with carry)
+9. LRU and Custom DS Design
+
+Reverse entire Linked List
+🔗 Leetcode 206
+
+Reverse between positions m and n
+🔗 Leetcode 92
+
+Reverse in K-sized groups
+🔗 Leetcode 25
+
+Reverse alternate k nodes
+
+📌 Patterns Covered: Recursion, Loop, Pointer juggling
+
+🔗 3. Two Pointer / Fast & Slow Pointer
+Find middle of the list
+🔗 Leetcode 876
+
+Detect cycle
+🔗 Leetcode 141
+
+Find starting node of cycle
+🔗 Leetcode 142
+
+Remove N-th node from end
+🔗 Leetcode 19
+
+Check if palindrome
+🔗 Leetcode 234
+
+📌 Patterns Covered: Slow/Fast Pointer, Mid Finding, Cycle, Restore after use
+
+🧠 4. Recursion Based
+Already shared, here’s a quick recap:
+
+Reverse recursively
+
+Print in reverse
+
+Palindrome check (using recursion)
+
+Merge recursively
+
+🔁 5. Merging / Sorting
+Merge 2 sorted lists
+🔗 Leetcode 21
+
+Merge K sorted lists
+🔗 Leetcode 23
+
+Sort Linked List using Merge Sort
+🔗 Leetcode 148
+
+Insertion sort on linked list
+🔗 Leetcode 147
+
+📌 Patterns Covered: Divide & Conquer, Priority Queue, Sorting
+
+🔁 6. Modification In-place
+Remove duplicates from sorted list
+🔗 Leetcode 83
+
+Remove all nodes with duplicates
+🔗 Leetcode 82
+
+Odd-Even Linked List
+🔗 Leetcode 328
+
+Reorder list (L0 → Ln → L1 → Ln-1...)
+🔗 Leetcode 143
+
+Rotate Linked List
+🔗 Leetcode 61
+
+📌 Patterns Covered: Pointer restructuring, in-place update
+
+🧬 7. Linked List with Extra Pointers
+Copy list with random pointer
+🔗 Leetcode 138
+
+Flatten multilevel doubly linked list
+🔗 Leetcode 430
+
+Flatten a list of lists
+
+📌 Patterns Covered: Hash Map, DFS, Recursion
+
+➕ 8. Arithmetic on Linked List
+Add two numbers (forward order)
+🔗 Leetcode 2
+
+Add two numbers II (reverse order)
+🔗 Leetcode 445
+
+📌 Patterns Covered: Stack, Recursion, Carry handling
+
+🧩 9. Design Problems (LL as base)
+Design LRU Cache
+🔗 Leetcode 146
+
+Design Doubly Linked List
+🔗 Leetcode 707
+
+📌 Patterns Covered: Data structure design using HashMap + Doubly LL

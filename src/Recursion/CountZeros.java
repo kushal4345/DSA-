@@ -18,3 +18,4 @@ public class CountZeros {
        System.out.println(countZero(num,count));
     }
 }
+
