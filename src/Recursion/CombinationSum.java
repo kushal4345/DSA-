@@ -1,15 +1,17 @@
 package Recursion;
+
 import java.util.*;
 
-public class combinations {
-    static void comb(int index, int arr[], int n, int k, List<List<Integer>> result, List<Integer> current) {
-        if (current.size() == k) {
+public class CombinationSum {
+    static void comb(int index, int arr[],  int target, List<List<Integer>> result, List<Integer> current) {
+        if (target==0) {
             result.add(new ArrayList<>(current));
             return;
         }
+        if (target < 0) return;
         for (int i = index; i < arr.length; i++) {
             current.add(arr[i]);
-            comb(index+1, arr, n, k, result, current);
+            comb(i, arr,  target - arr[i], result, current);
             current.remove(current.size() - 1);
         }
     }
@@ -18,13 +20,10 @@ public class combinations {
         int index = 0;
         ArrayList<List<Integer>> result = new ArrayList<>();
         ArrayList<Integer> current = new ArrayList<>();
-        int n = 4;
-        int k = 2;
-        int arr[] = new int[n];
-        for (int i = 1; i <= n; i++) {
-            arr[i - 1] = i;
-        }
-        comb(index, arr, n, k, result, current);
+        int k = 7;
+        int arr[] = {2,3,6,7};
+
+        comb(index, arr,  k, result, current);
         System.out.println(result);
     }
 }
