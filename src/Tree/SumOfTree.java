@@ -11,12 +11,13 @@ public class SumOfTree {
         }
     }
  public static int sumOfNodes(Node root){
-        int sum =0;
+int sum = 0;
         if(root==null) return 0;
-        int leftSum = sumOfNodes(root.left);
-        int rightSum =sumOfNodes(root.right);
+        sumOfNodes(root.left);
+        sum = sum +  root.val;
+         sumOfNodes(root.right);
 
-     sum = sum +  root.val + leftSum + rightSum;
+
         return sum;
  }
     public static void main(String[] args) {
