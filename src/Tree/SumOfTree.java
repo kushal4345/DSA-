@@ -13,10 +13,11 @@ public class SumOfTree {
  public static int sumOfNodes(Node root){
 int sum = 0;
         if(root==null) return 0;
-        sumOfNodes(root.left);
-        sum = sum +  root.val;
-         sumOfNodes(root.right);
 
+
+       int left =   sumOfNodes(root.left);
+       int right =  sumOfNodes(root.right);
+          sum = sum +  root.val + left+right;
 
         return sum;
  }
