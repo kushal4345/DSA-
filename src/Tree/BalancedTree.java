@@ -13,6 +13,7 @@ public class BalancedTree {
     }
     public static void main(String[] args) {
         Node root = new Node(1);
+
         Node b = new Node(2);
         Node c = new Node(9);
         Node d = new Node(2);
