@@ -11,20 +11,18 @@ public class PathSum {
         return sum(root.left,targetSum-root.val)||sum(root.right,targetSum - root.val);
     }
     public static void main(String[] args) {
-        Node root = new Node(1);
-        Node b = new Node(2);
-        Node c = new Node(9);
-        Node d = new Node(2);
-        Node e = new Node(7);
-        Node f = new Node(6);
-        Node g = new Node(5);
+        Node root = new Node(5);
+        root.left = new Node(4);
+        root.right = new Node(8);
 
-        root.left = b;
-        root.right = c;
-        c.left = d;
-        d.right = e;
-        b.left = f;
-        int targetSum  = 3;
+        root.left.left = new Node(11);
+        root.left.left.left = new Node(7);
+        root.left.left.right = new Node(2);
+
+        root.right.left = new Node(13);
+        root.right.right = new Node(4);
+        root.right.right.right = new Node(1);
+        int targetSum  = 22;
        boolean result =  sum(root,targetSum );
         System.out.println(result);
     }
