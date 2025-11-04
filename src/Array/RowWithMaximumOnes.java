@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class RowWithMaximumOnes {
 
-    // Method to find row with maximum ones
+ 
     public int[] rowAndMaximumOnes(int[][] mat) {
         int max = 0;
         int rowIndex = 0;
