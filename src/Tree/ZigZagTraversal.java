@@ -1,6 +1,6 @@
 package Tree;
 import java.util.*;
-public class ZigZagTraversal {
+public class  ZigZagTraversal {
     static List<List<Integer>> zigzagLevelOrder(Node root) {
         List<List<Integer>> ans = new ArrayList<>();
         if (root == null) return ans;
