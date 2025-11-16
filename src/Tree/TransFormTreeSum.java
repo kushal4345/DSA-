@@ -4,12 +4,9 @@ public  class TransFormTreeSum {
     public static void toSumTree(Node root) {
         convert(root);
     }
-
    public static  int convert(Node root) {
         if (root == null) return 0;
-
         int oldValue = root.val;
-
         int leftSum = convert(root.left);
         int rightSum = convert(root.right);
 
