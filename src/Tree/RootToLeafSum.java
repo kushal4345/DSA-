@@ -1,9 +1,6 @@
 package Tree;
 
-// ---------- TreeNode Definition ----------
 
-
-// ---------- Solution Class ----------
 class RootToLeafSum {
 
     // Function returns sum of all root-to-leaf numbers
