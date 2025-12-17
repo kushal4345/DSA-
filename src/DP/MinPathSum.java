@@ -26,7 +26,10 @@ public class MinPathSum {
         for(int arr[] : dp){
             Arrays.fill(arr,-1);
         }
-        System.out.println(dfs(0,0,grid,dp));
+
+        
+        
+        
     }
 
 }
