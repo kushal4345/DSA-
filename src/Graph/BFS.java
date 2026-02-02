@@ -19,26 +19,25 @@ public class BFS {
         }
 
         graph[0].add(new Edge(0, 2));
+        graph[0].add(new Edge(0, 3));
         graph[1].add(new Edge(1, 4));
+        graph[1].add(new Edge(1, 0));
         graph[2].add(new Edge(2, 3));
         graph[4].add(new Edge(4, 2));
+
     }
 
     static void bfs(int start, boolean[] visited, ArrayList<Edge>[] graph) {
         Queue<Integer> q = new LinkedList<>();
-
         q.add(start);
-        visited[start] = true;
-
-        while (!q.isEmpty()) {
-            int curr = q.remove();
-            System.out.println(curr);
-
-            for (Edge e : graph[curr]) {
-                int neigh = e.dest;
-                if (!visited[neigh]) {
-                    visited[neigh] = true;
-                    q.add(neigh);
+        while(! q.isEmpty()){
+            int curr  = q.remove();
+            if(visited[curr]==false){
+                System.out.println(curr);
+                visited[curr] = true;
+                for(int i =0;i<graph[curr].size();i++){
+                    Edge e = graph[curr].get(i);
+                    q.add(e.dest);
                 }
             }
         }
